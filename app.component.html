@@ -1,0 +1,144 @@
+<section class="header">
+  <img alt="MCKV Logo" [src]="itemImageUrl">
+
+  <h1>{{instituteName}}</h1>
+  <p><strong>{{address}}</strong></p>
+  
+</section>
+
+<body>
+  <nav [style]='navStyle'>
+      <ul [style]='navUlStyle'>
+          <li [style]='navUlLiStyle'><a [style]='navUlLiHypStyle' [style.color]="'yellow'" [style.text-decoration]="activeLinkStyle" href="home.html">Home</a></li>
+          <li [style]='navUlLiStyle'><a [style]='navUlLiHypStyle' [style.text-decoration]="linkStyle" href="blog.html">About Us</a></li>
+          <li [style]='navUlLiStyle'><a [style]='navUlLiHypStyle' [style.text-decoration]="linkStyle" href="news.html">News</a></li>
+      </ul>
+  </nav>
+
+  <!--
+  <nav [style]='navStyle'>
+    <a [style.text-decoration]="activeLinkStyle">Home Page</a>
+    <a [style.text-decoration]="linkStyle">Login</a>
+  </nav>
+  -->
+  <table class="styled-table"> 
+    <caption><strong>Attribute Binding Example</strong></caption>
+    <tr> 
+      <td >This cell has colspan 1</td> 
+      <td >This cell has colspan 1</td> 
+  
+    </tr> 
+    <tr> 
+         <td [attr.colspan]="myColspan">This cell is spread over 2 coumns using attribute binding</td> 
+     </tr> 
+  </table>
+
+ <table [class.myClass]="myClassBinding"> 
+    <caption><strong>Style Binding Example</strong></caption>
+    <tr> 
+      <td >This cell has colspan 1</td> 
+    </tr> 
+  </table>
+
+  <table [class.myClass]="!myClassBinding"> 
+    <caption><strong>Style Binding Example</strong></caption>
+    <tr> 
+      <td >This cell has colspan 1</td> 
+    </tr> 
+  </table>
+
+  <table class="styled-table">
+    <caption><strong>Enter Student Data</strong></caption>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Operation</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td><input type="text" id="item-input" #studentName placeholder="Enter Student Name"></td>
+      <td><input type="text" id="item-input" #studentRoll placeholder="Enter Student Roll No"></td>
+      <td>
+      <button type="button" (click)="addNewStudent(studentName, studentRoll)">Add Student</button>
+      </td>
+      </tr>
+    </tbody>
+    
+  </table>
+  
+<table class="styled-table">
+  
+  <caption><strong>New Entered Student Data</strong></caption>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Roll</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>{{addedDStudentName}}</td>
+      <td>{{addedDStudentRoll}}</td>
+      
+      </tr>
+    </tbody>
+    
+</table>
+
+
+
+
+
+
+<table class="styled-table">
+  <caption><strong>Enter Student Data</strong></caption>
+  <thead>
+  <tr>
+      <th>Name</th>
+      <th>Roll</th>
+      
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td><input type="text" [(ngModel)]="studentName2way" placeholder="Enter Student Name"></td>
+    <td><input type="text" [(ngModel)]="studentRoll2way" placeholder="Enter Student Roll No"></td>
+    </tr>
+  </tbody>
+  
+</table>
+
+<table class="styled-table">
+
+<caption><strong>New Entered Student Data</strong></caption>
+  <thead>
+  <tr>
+      <th>Name</th>
+      <th>Roll</th>
+      
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>{{studentName2way}}</td>
+    <td>{{studentRoll2way}}</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+
+  <!--
+  <input type="text" id="item-input" [value]="departmentName" #deptName placeholder="Enter Department Name">
+  <button (click)="test(deptName)"></button>
+  <span>{{departmentName}}</span>
+
+  <input type="text" [(ngModel)]="departmentName2"/>
+  
+  <span>{{departmentName2}}</span>
+-->
+
+</body>

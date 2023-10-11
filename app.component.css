@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+
+h1,
+p,
+a{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+}
+
+h1 {
+  font-size: 2.8em;
+  padding: 10px 0;
+  font-weight: 800;
+}
+
+p {
+    
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.header {
+  width: 100%;
+  padding:60px 0;
+  text-align: center;
+  background: #33cccc;
+  color: white;
+}
+
+
+.btn-bgstroke {
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 30px; 
+}
+
+.btn-bgstroke:hover {
+  background-color: white;
+  color: #33cccc;
+}
+
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto; 
+  margin-top: 30px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.styled-table caption {
+  background-color: #27091e;
+  color: #e1dddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+
+.myClass {
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto; 
+  margin-top: 30px;
+  font-size: 0.9em;
+  font-family:cursive;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+
+
+
+
+/*
+nav {
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+*/
+/* This allow us to arrange list items in a row, without using float */
+/*
+nav ul li {
+    
+    display: inline-block;
+    list-style-type: none;
+}
+ */
+/* Create a style for the first level items */
+/*
+nav > ul > li > a {
+    color: #aaa;
+    background-color:rgb(56, 56, 53);
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+*/
